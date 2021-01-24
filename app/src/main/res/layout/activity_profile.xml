@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/profile_app_bar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/profile_app_bar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/empty_profile_image"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="38dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/profile_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_display_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/profile_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="Send Friend Request" />
+
+    <Button
+        android:id="@+id/profile_decline_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_send_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-128dp"
+        android:text="Decline Friend Request" />
+
+    <ImageButton
+        android:id="@+id/profile_new_req_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/profile_app_bar"
+        android:background="@drawable/new_friends_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/profile_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profile_app_bar"
+        android:layout_toStartOf="@+id/profile_new_req_btn"
+        android:background="@drawable/new_message_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

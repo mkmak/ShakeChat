@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/friends_appBar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/friends_appBar" />
+
+    <ImageButton
+        android:id="@+id/friends_new_req_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/friends_appBar"
+        android:background="@drawable/new_friends_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/friends_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/friends_appBar"
+        android:layout_toStartOf="@+id/friends_new_req_btn"
+        android:background="@drawable/new_message_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

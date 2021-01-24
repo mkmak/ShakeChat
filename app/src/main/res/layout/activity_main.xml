@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_page_toolbar"
+        android:background="@drawable/main_background"
+        android:text="@string/welcome"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/main_shake_logo"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shake_me_logo"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/main_new_req_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/main_page_toolbar"
+        android:background="@drawable/new_friends_icon"
+        android:layout_margin="5dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/main_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_toStartOf="@+id/main_new_req_btn"
+        android:background="@drawable/new_message_icon"
+        android:layout_margin="5dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

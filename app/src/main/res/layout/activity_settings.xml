@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/setting_page_toolbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/setting_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_page_toolbar"
+        android:layout_margin="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/setting_display_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Display Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/setting_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_display_name"
+        android:layout_margin="10dp" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/setting_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/setting_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="Save Changes" />
+
+    <ImageButton
+        android:id="@+id/settings_new_req_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/setting_page_toolbar"
+        android:background="@drawable/new_friends_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/settings_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/setting_page_toolbar"
+        android:layout_toStartOf="@+id/settings_new_req_btn"
+        android:background="@drawable/new_message_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/setting_college"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_description"
+        android:layout_margin="10dp" />
+
+    <Spinner
+        android:id="@+id/setting_major"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_college"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

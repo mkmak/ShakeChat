@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:id="@+id/chat_layout">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/chat_app_bar"
+        android:focusableInTouchMode="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_messages"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chat_app_bar"
+        android:clipToPadding="false"
+        android:layout_above="@+id/chat_input"/>
+
+    <ImageButton
+        android:id="@+id/chat_new_req_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/chat_app_bar"
+        android:background="@drawable/new_friends_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible"
+        android:contentDescription="@string/new_friends_icon" />
+
+    <ImageButton
+        android:id="@+id/chat_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_toStartOf="@+id/chat_new_req_btn"
+        android:background="@drawable/new_message_icon"
+        android:layout_margin="15dp"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/chat_send_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/send_message" />
+
+    <ImageButton
+        android:id="@+id/chat_add_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/add_photo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chat_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        android:layout_toEndOf="@+id/chat_add_btn"
+        android:layout_toStartOf="@+id/chat_send_btn" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/chat_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Input Message" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

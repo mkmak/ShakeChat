@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message_single_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/message_single_time"
+        android:layout_below="@+id/message_single_time"
+        android:layout_centerVertical="true"
+        android:text="Message"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:background="@color/common_google_signin_btn_text_light_focused"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_single_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/empty_profile_image" />
+
+    <TextView
+        android:id="@+id/message_curr_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/message_curr_single_image"
+        android:layout_toStartOf="@+id/message_curr_single_image"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_curr_single_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/empty_profile_image" />
+
+    <TextView
+        android:id="@+id/message_curr_single_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:text="Message"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/message_curr_single_time"
+        android:layout_alignEnd="@+id/message_curr_single_time"/>
+
+    <TextView
+        android:id="@+id/message_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_single_image"
+        android:layout_toEndOf="@+id/message_single_image"
+        android:text="time"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/message_single_recall_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="92dp"
+        android:text="Recall"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/message_single_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/message_single_recall_btn"
+        android:text="Cancel"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/message_single_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/message_single_text"
+        android:layout_below="@+id/message_single_time"
+        android:src="@drawable/new_friends_icon"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/message_curr_single_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/message_curr_single_time"
+        android:layout_alignTop="@+id/message_single_text"
+        android:src="@drawable/new_friends_icon"
+        android:visibility="invisible" />
+
+</RelativeLayout>

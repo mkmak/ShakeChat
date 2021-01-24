@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">ShakeChatTry</string>
+    <string name="register">Register</string>
+    <string name="log_out">Log Out</string>
+    <string name="log_in">LOG IN</string>
+    <string name="profile_setting">Profile Setting</string>
+    <string name="friends_list">Friends List</string>
+    <string name="my_profile">My Profile</string>
+    <string name="welcome">Welcome </string>
+    <string name="w">good</string>
+    <string name="new_friends_icon">new friends icon</string>
+
+    <string-array name="ucsd_majors" >
+        <item>--Select Your Major--</item>
+        <item>Anthropology</item>
+        <item>Art</item>
+        <item>Bioengineering (BE)</item>
+        <item>Biological Sciences</item>
+        <item>Chemistry and Biochemistry</item>
+        <item>Chinese Studies</item>
+        <item>Classical Studies</item>
+        <item>Cognitive Science (B.A./B.S.)</item>
+        <item>Communication</item>
+        <item>Computer Science and Engineering (CSE)</item>
+        <item>Critical Gender Studies</item>
+        <item>Dance</item>
+        <item>Data Science</item>
+        <item>Economics</item>
+        <item>Electrical and Computer Engineering (ECE)</item>
+        <item>Engineering</item>
+        <item>English</item>
+        <item>Environmental Systems Program</item>
+        <item>Ethnic Studies</item>
+        <item>Family and Preventive Medicine</item>
+        <item>German Studies</item>
+        <item>Global Health</item>
+        <item>History</item>
+        <item>Human Development</item>
+        <item>Individual Majors (B.A. / B.S.)</item>
+        <item>International Studies (B.A.)</item>
+        <item>Italian Studies</item>
+        <item>Japanese Studies</item>
+        <item>Judaic Studies</item>
+        <item>Latin American Studies</item>
+        <item>Linguistics</item>
+        <item>Literature</item>
+        <item>Mathematics</item>
+        <item>Mechanical and Aerospace Engineering (MAE)</item>
+        <item>Music</item>
+        <item>NanoEngineering</item>
+        <item>Philosophy</item>
+        <item>Physics</item>
+        <item>Political Science (B.A.)</item>
+        <item>Psychology</item>
+        <item>Public Health</item>
+        <item>Religion, Program for the Study Of</item>
+        <item>Russian and Soviet Studies</item>
+        <item>Scripps Institution of Oceanography</item>
+        <item>Sociology (B.A.)</item>
+        <item>Structural Engineering (SE)</item>
+        <item>Theatre and Dance</item>
+        <item>Third World Studies</item>
+        <item>Undeclared</item>
+        <item>Urban Studies and Planning</item>
+        <item>Visual Arts</item>
+    </string-array>
+
+    <string-array name="ucsd_colleges">
+        <item>--Select Your College--</item>
+        <item>Revelle</item>
+        <item>Muir</item>
+        <item>Marshall</item>
+        <item>Roosevelt</item>
+        <item>Sixth</item>
+    </string-array>
+
+
+</resources>

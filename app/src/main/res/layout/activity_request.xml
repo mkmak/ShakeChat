@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/request_app_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/request_list"
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/request_app_bar"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageButton
+        android:id="@+id/request_new_chat_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/request_app_bar"
+        android:background="@drawable/new_message_icon"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
